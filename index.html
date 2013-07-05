@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" media="all"  href="assets/css/cascade/production/full.min.css" />
+        <link rel="stylesheet" type="text/css" media="all"  href="assets/css/site.css" />
+        <title>Cascade Framework</title>
+        <meta name="description" content="Professional Frontend framework that makes building websites easier than ever.">
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="site-header">
+            <div class="site-center">
+                <div class="cell">
+                    <h1>Cascade Framework Light</h1>
+                </div>
+            </div>
+        </div>
+        <div class="masthead">
+            <div class="site-center">
+                <div class="cell">
+                    <h3>A CSS micro-framework based on Cascade Framework</h3>
+                </div>
+            </div>
+        </div>
+        <div class="site-body">
+            <div class="site-center">
+                <div class="col docs">
+                    <div class="cell">
+                        <div class="col">
+                            <div class="cell">
+                                <h2>Why a light version?</h2>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="cell">
+                                <p>
+                                    <a href="http://www.cascade-framework.com/">Cascade Framework</a> gives you a perfect balance between
+                                    lots of features and a lightweigt footprint.
+                                </p>
+                                <p>
+                                    Cascade Framework Light is a framework for when you don't need most of the features <a href="http://www.cascade-framework.com/">Cascade Framework</a> offers.
+                                </p>
+                                <p>
+                                    If you want just a normalised boilerplate to start from any don't need most of the features offered by
+                                    <a href="http://www.cascade-framework.com/">Cascade Framework</a>, Cascade Framework Light is the way to go.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col sizefill">
+                    <div class="cell">
+                        <div class="col">
+                            <div class="cell">
+                                <h2>An overview of the different modules</h2>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="cell">
+                                <table class="border">
+                                    <tr>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Description
+                                        </th>
+                                        <th class="size">
+                                            Size (minified + Gzipped)
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Grid
+                                        </td>
+                                        <td>
+                                            Basic grid features
+                                        </td>
+                                        <td class="size">
+                                            323 bytes
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Colors
+                                        </td>
+                                        <td>
+                                            Color scheme
+                                        </td>
+                                        <td class="size">
+                                            262 bytes
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Layout
+                                        </td>
+                                        <td>
+                                            A normalised layout
+                                        </td>
+                                        <td class="size">
+                                            1571 bytes
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Responsive
+                                        </td>
+                                        <td>
+                                            Responsive behavior
+                                        </td>
+                                        <td class="size">
+                                            202 bytes
+                                        </td>
+                                    </tr>
+                                    <tr class="total">
+                                        <td>
+                                            Full
+                                        </td>
+                                        <td>
+                                            All modules combined
+                                        </td>
+                                        <td class="size">
+                                            2010 bytes
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <hr />
+                </div>
+                <div class="col">
+                    <div class="cell">
+                        <div class="col">
+                            <div class="cell">
+                                <h1>Demos</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col taskbar">
+                        <div class="cell">
+                            <div class="col">
+                                <div class="cell">
+                                    <ol>
+                                        <li><a href="#basic-typography">Basic typography</a></li>
+                                        <li><a href="#additional-typography">Additional typography</a></li>
+                                        <li><a href="#lists">Lists</a></li>
+                                        <li><a href="#quotes">Quotes</a></li>
+                                        <li><a href="#pre-formatted">Pre-formatted text</a></li>
+                                        <li><a href="#forms">Forms</a></li>
+                                        <li><a href="#table">Table</a></li>
+                                        <li><a href="#table-with-border">Table with border</a></li>
+                                        <li><a href="#datasheet">Datasheet</a></li>
+                                        <li><a href="#media-object">Media object</a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col sizefill">
+                        <div class="col">
+                            <div class="cell">
+                                <div class="col" id="basic-typography">
+                                    <div class="cell">
+                                        <h2>Basic typography</h2>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="cell">
+                                        <h1>Heading 1</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <h2>Heading 2</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <h3>Heading 3</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <h4>Heading 4</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <h5>Heading 5</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <h6>Heading 6</h6>			
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <hr />
+                        </div>
+                        <div class="col">
+                            <div class="cell">
+                                <div class="col" id="additional-typography">
+                                    <div class="cell">
+                                        <h2>Additional typography</h2>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="cell">
+                                        <div class="col">
+                                            <div class="col additional">
+                                                <p><abbr title="Cascading Style Sheets">CSS</abbr></p>
+                                                <p><cite>Origin of Species</cite></p>
+                                                <p><code>Code tag</code></p>
+                                                <p><em>Emphasis</em></p>
+                                                <p><mark>Mark text</mark></p>
+                                            </div>
+                                            <div class="col sizefill">
+                                                <p><code>&lt;abbr&gt;</code></p>
+                                                <p><code>&lt;cite&gt;</code></p>
+                                                <p><code>&lt;code&gt;</code></p>
+                                                <p><code>&lt;em&gt;</code></p>
+                                                <p><code>&lt;mark&gt;</code></p>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="col additional">
+                                                <p><kbd>Cmd + Shift + i</kbd></p>
+                                                <p><strong>Highlighted text</strong></p>
+                                                <p><b>Bold text</b></p>
+                                                <p><del>Deleted text</del></p>
+                                                <p><sup>superscript</sup>&nbsp;</p>
+                                                <p><sub>subscript</sub>&nbsp;</p>
+                                            </div>
+                                            <div class="col sizefill">
+                                                <p><code>&lt;kbd&gt;</code></p>
+                                                <p><code>&lt;strong&gt;</code></p>
+                                                <p><code>&lt;b&gt;</code></p>
+                                                <p><code>&lt;del&gt;</code></p>
+                                                <p><code>&lt;sup&gt;</code></p>
+                                                <p><code>&lt;sub&gt;</code></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <hr />
+                        </div>
+                        <div class="col">
+                            <div class="cell">
+                                <div class="col" id="lists">
+                                    <div class="cell">
+                                        <h2>Lists</h2>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="cell">
+                                        <div class="col">
+                                            <div class="col lists">
+                                                <ul>
+                                                    <li class="">One.</li>
+                                                    <li class="">Two.
+                                                        <ul class="">
+                                                            <li class="">1</li>
+                                                            <li class="">2					
+                                                                <ul class="">
+                                                                    <li class="">1</li>
+                                                                    <li class="">2
+                                                                        <ul class="">
+                                                                            <li>1</li>
+                                                                            <li>2</li>
+                                                                            <li>3</li>										
+                                                                        </ul>							
+                                                                    </li>
+                                                                    <li>3</li>										
+                                                                </ul>
+                                                            </li>
+                                                            <li>3</li>										
+                                                        </ul>	  
+                                                    </li>	
+                                                    <li>Three.</li>
+                                                    <li>Four.</li>
+                                                    <li>Five.</li>
+                                                    <li>Six.</li>
+                                                    <li>Seven.</li>
+                                                    <li>Eight.</li>				  				  				  				  
+                                                </ul>			
+                                            </div>
+                                            <div class="sizefill">
+                                                <ol>
+                                                    <li>One.</li>
+                                                    <li>Two.</li>
+                                                    <li>Three.</li>
+                                                    <li>Four.</li>
+                                                    <li>Five</li>			
+                                                    <li class="hovered-item">Six
+                                                        <ol class="child-of-hovered-item">
+                                                            <li>1</li>
+                                                            <li class="hovered-item">2					
+                                                                <ol class="child-of-hovered-item">
+                                                                    <li>1</li>
+                                                                    <li class="hovered-item">2
+                                                                        <ol class="child-of-hovered-item">
+                                                                            <li class="hovered-item">1</li>
+                                                                            <li class="">2</li>
+                                                                            <li class="">3</li>										
+                                                                        </ol>							
+                                                                    </li>
+                                                                    <li class="">3</li>										
+                                                                </ol>
+                                                            </li>
+                                                            <li class="">3</li>										
+                                                        </ol>
+                                                    </li>
+                                                    <li class="">Seven</li>
+                                                    <li class="">Eight</li>
+                                                </ol>				
+                                            </div>				
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <hr />
+                        </div>
+                        <div class="col">
+                            <div class="cell">
+                                <div class="col" id="quotes">
+                                    <div class="cell">
+                                        <h2>Quotes</h2>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="cell">
+                                        <blockquote>
+                                            <p>This is a block quotation containing a <em>single</em> paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                            <small>Cite tag</small>
+                                        </blockquote>	
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <hr />
+                        </div>
+                        <div class="col">
+                            <div class="cell">
+                                <div class="col" id="pre-formatted">
+                                    <div class="cell">
+                                        <h2>Pre-formatted text</h2>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="cell">
+                                        <pre>
+
+   AH, broken is the golden bowl!
+        The spirit flown forever!
+    Let the bell toll! — A saintly soul
+        Glides down the Stygian river!
+            And let the burial rite be read —
+                The funeral song be sung —
+            A dirge for the most lovely dead
+                That ever died so young!
+                    And, Guy De Vere,
+                    Hast thou no tear?
+                        Weep now or nevermore!
+                    See, on yon drear
+                   And rigid bier,
+                       Low lies thy love Lenore!
+                                                    
+
+
+       Lenore - Edgar Allan Poe (1831)
+                                                   
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <hr />
+                        </div>
+                        <div class="col">
+                            <div class="cell">
+                                <div class="col" id="forms">
+                                    <div class="cell">
+                                        <h2>Forms</h2>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="cell">
+                                        <form>
+                                            <div class="col">
+                                                <div class="col label">
+                                                    <div class="cell">
+                                                        <label>First name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col sizefill">
+                                                    <div class="cell">
+                                                        <input type="text" placeholder="Enter first name here" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="col label">
+                                                    <div class="cell">
+                                                        <label>Last name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col sizefill">
+                                                    <div class="cell">
+                                                        <input type="text" placeholder="Enter last name here" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="col label">
+                                                    <div class="cell">
+                                                        <label>Address</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col sizefill">
+                                                    <div class="cell">
+                                                        <input type="text" placeholder="Enter address here" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="col label">
+                                                </div>
+                                                <div class="col sizefill">
+                                                    <div class="cell">
+                                                        <input type="submit" value="Submit" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <hr />
+                        </div>
+                        <div class="col">
+                            <div class="cell">
+                                <div class="col" id="table">
+                                    <div class="cell">
+                                        <h2>Table</h2>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="cell">
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    Name
+                                                </th>
+                                                <th>
+                                                    Function
+                                                </th>
+                                                <th>
+                                                    Location
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    James
+                                                </td>
+                                                <td>
+                                                    Team Lead
+                                                </td>
+                                                <td>
+                                                    New York
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    John
+                                                </td>
+                                                <td>
+                                                    Developer
+                                                </td>
+                                                <td>
+                                                    Kansas
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Sarah
+                                                </td>
+                                                <td>
+                                                    Designer
+                                                </td>
+                                                <td>
+                                                    New York
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <hr />
+                        </div>
+                        <div class="col">
+                            <div class="cell">
+                                <div class="col" id="table-with-border">
+                                    <div class="cell">
+                                        <h2>Table with border</h2>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="cell">
+                                        <table class="border">
+                                            <tr>
+                                                <th>
+                                                    Name
+                                                </th>
+                                                <th>
+                                                    Function
+                                                </th>
+                                                <th>
+                                                    Location
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    James
+                                                </td>
+                                                <td>
+                                                    Team Lead
+                                                </td>
+                                                <td>
+                                                    New York
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    John
+                                                </td>
+                                                <td>
+                                                    Developer
+                                                </td>
+                                                <td>
+                                                    Kansas
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Sarah
+                                                </td>
+                                                <td>
+                                                    Designer
+                                                </td>
+                                                <td>
+                                                    New York
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <hr />
+                        </div>
+                        <div class="col">
+                            <div class="cell">
+                                <div class="col" id="datasheet">
+                                    <div class="cell">
+                                        <h2>Datasheet</h2>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="cell">
+                                        <p><mark>Try editing the cells!</mark></p>
+                                        <table class="border">
+                                            <tr>
+                                                <th>
+                                                    Name
+                                                </th>
+                                                <th>
+                                                    Function
+                                                </th>
+                                                <th>
+                                                    Location
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input value="James" />
+                                                </td>
+                                                <td>
+                                                    <input value="Team Lead" />
+                                                </td>
+                                                <td>
+                                                    <input value="New York" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input value="John" />
+                                                </td>
+                                                <td>
+                                                    <input value="Developer" />
+                                                </td>
+                                                <td>
+                                                    <input value="Kansas" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input value="Sarah" />
+                                                </td>
+                                                <td>
+                                                    <input value="Designer" />
+                                                </td>
+                                                <td>
+                                                    <input value="New York" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <hr />
+                        </div>
+                        <div class="col">
+                            <div class="cell">
+                                <div class="col" id="media-object">
+                                    <div class="cell">
+                                        <h2>Media object</h2>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="cell mediaobject">
+                                        <div class="col sizefit">
+                                            <div class="cell">
+                                                <img src="assets/img/64x64.gif" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col sizefill">
+                                            <div class="col">
+                                                <div class="cell">
+                                                    <a href="#">David</a> says:<br>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis adipiscing est. Curabitur vel dui dolor. Vestibulum molestie fermentum diam, nec interdum ante molestie ut. Integer consequat iaculis auctor. Duis vitae felis ligula, ultrices blandit dolor.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col sizefit">
+                                                <div class="cell">
+                                                    <img src="assets/img/64x64.gif" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col sizefill">
+                                                <div class="col">
+                                                    <div class="cell">
+                                                        <a href="#">Irene</a> says:<br>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis adipiscing est. Curabitur vel dui dolor. Vestibulum molestie fermentum diam, nec interdum ante molestie ut. Integer consequat iaculis auctor. Duis vitae felis ligula, ultrices blandit dolor.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="cell">
+                                                        <a href="#">Monica</a> likes this comment!<br>
+                                                        <a href="#">Chen</a> likes this comment!
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col sizefit">
+                                                <div class="cell">
+                                                    <img src="assets/img/64x64.gif" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col sizefill">
+                                                <div class="col">
+                                                    <div class="cell">
+                                                        <a href="#">Chen</a> says:<br>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis adipiscing est. Curabitur vel dui dolor. Vestibulum molestie fermentum diam, nec interdum ante molestie ut. Integer consequat iaculis auctor. Duis vitae felis ligula, ultrices blandit dolor.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="cell">
+                                                        <a href="#">David</a> likes this comment!
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer">
+            <div class="site-center">
+                <div class="cell">
+                    © 2013, <a href="https://twitter.com/johnslegers">John Slegers</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
