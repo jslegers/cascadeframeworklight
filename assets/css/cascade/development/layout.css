@@ -1,4 +1,4 @@
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, pre, .sizefit img, address, button {
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, pre, .width-fit img, address, button {
     display:block;*zoom:1;
 }
 

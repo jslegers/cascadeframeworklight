@@ -1,0 +1,1278 @@
+// Primitives
+// -----------------------------
+
+%clear-both {
+  clear:both;
+}
+
+%content-space {
+  content:"";
+}
+
+%display-list-item {
+  display:list-item;
+}
+
+%display-table {
+  display:table;
+}
+
+%display-block {
+  display:block;
+}
+
+%display-inline-block {
+  display:inline-block;
+  *display:inline;
+  *zoom:1;
+}
+
+%component-clearfix-ie6-ie7 {
+  display:block;
+  *zoom:1;
+}
+
+%component-clearfix-before-and-after {
+  display:table;
+  content:"";
+}
+
+%float-none-important {
+  float:none !important;
+}
+
+%float-left {
+  float:left;
+}
+
+%display-width-fill {
+  display:table-cell;
+  float:none;
+  _float:left;
+}
+
+%display-none-modern-only {
+  display:none;
+}
+
+%display-none-modern-only-2 {
+  display:none;
+}
+
+%position-relative {
+  position:relative;
+}
+
+%position-relative-ie6-ie7 {
+  *position:relative;
+}
+
+%top-sup {
+  top:-0.5em;
+}
+
+%bottom-sub {
+  bottom:-0.25em;
+}
+
+%margin-none {
+  margin:0;
+}
+
+%margin-10px {
+  margin:10px;
+}
+
+%center {
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+%margin-list {
+  margin:0 0 9px 25px;
+}
+
+%margin-padding-fieldset {
+  margin:0 2px;
+  padding:0.35em 0.625em 0.75em;
+}
+
+%margin-hr {
+  margin:18px 0;
+}
+
+%margin-4px {
+  margin:4px;
+}
+
+%margin-bottom-none {
+  margin-bottom:0;
+}
+
+%margin-bottom-18px {
+  margin-bottom:18px;
+}
+
+%margin-bottom-9px {
+  margin-bottom:9px;
+}
+
+%margin-bottom-4px {
+  margin-bottom:4px;
+}
+
+%margin-left-9px {
+  margin-left:9px;
+}
+
+%margin-right-4px {
+  margin-right:4px;
+}
+
+%margin-right-5px {
+  margin-right:5px;
+}
+
+%margin-left-legend {
+  *margin-left:-7px;
+}
+
+%padding-8px {
+  padding:8px;
+}
+
+%padding-code {
+  padding:3px 4px;
+}
+
+%padding-pre {
+  padding:0 3px 2px;
+}
+
+%padding-5px {
+  padding:5px;
+}
+
+%padding-button {
+  *padding:3px 9px 1px;
+}
+
+%padding-4px {
+  padding:4px;
+}
+
+%padding-left-none {
+  padding-left:0;
+}
+
+%padding-none {
+  padding:0;
+}
+
+%padding-left-15px {
+  padding-left:15px;
+}
+
+%min-width-50px {
+  min-width:50px;
+}
+
+%width-full {
+  width:100%;
+}
+
+%width-width-fit {
+  width:auto;
+  _width:1px;
+}
+
+%width-920px {
+  width:920px;
+}
+
+%min-width-200px {
+  min-width:200px;
+}
+
+%width-width-fill {
+  width:10000px;
+  *width:auto;
+}
+
+%min-height-1px {
+  min-height:1px;
+}
+
+%width-select {
+  width:220px;
+}
+
+%width-table-input {
+  width:100%;
+  //width:99%;
+  height:18px;
+  //height:98%;
+}
+
+%height-full {
+  height:100%;
+}
+
+%height-auto {
+  height:auto;
+}
+
+%height-select {
+  height:28px;
+}
+
+%border-init {
+  border:0 solid #ccc;
+}
+
+%border-blockquote {
+  border-left-width:5px;
+}
+
+%border-top-1px {
+  border-top-width:1px;
+}
+
+%border-1px {
+  border-width:1px;
+}
+
+%border-bottom-1px {
+  border-bottom-width:1px;
+}
+
+%border-table {
+  border-collapse:separate;
+  border-spacing:0;
+  *border-collapse:collapse;
+  empty-cells:show;
+}
+
+%border-top-left-1px {
+  border-width: 1px 0 0 1px;
+}
+
+%border-bottom-right-1px {
+  border-width: 0 1px 1px 0;
+}
+
+%border-width-none {
+  border-width:0;
+}
+
+%border-style-dotted {
+  border-style: dotted;
+}
+
+%overflow-visible {
+  overflow:visible;
+}
+
+%overflow-visible-ie6-ie7 {
+  *overflow:visible;
+}
+
+%overflow-textarea {
+  overflow:auto;
+  resize:none;
+}
+
+%overflow-hidden {
+  overflow: hidden;
+}
+
+%overflow-html {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+%text-align-left {
+  text-align: left;
+}
+
+%text-align-justify {
+  text-align: justify;
+}
+
+%list-style-disc {
+  list-style: disc;
+}
+
+%list-style-decimal {
+  list-style: decimal;
+}
+
+%cursor-help {
+  cursor: help;
+}
+
+%cursor-pointer {
+  cursor: pointer;
+}
+
+%quotes-none {
+  quotes: none;
+}
+
+%component-quote-before-and-after {
+  content:""; content:none;
+}
+
+%outline-none {
+  outline: none;
+}
+
+%interpolation-cubic {
+  -ms-interpolation-mode:bicubic;
+}
+
+%background-image-cache {
+ // filter:expression(document.execCommand("BackgroundImageCache",false,true));
+}
+
+%button-focus-inner {
+    border:0; padding:0;
+}
+
+%input-focus-inner {
+    border:0; padding:2px;
+}
+
+%text-rendering-legibility {
+  text-rendering: optimizeLegibility;
+}
+
+%text-size-adjust-full {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+%font-family-sans-serif {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+%font-family-serif {
+  font-family: Menlo,Monaco,"Courier New",monospace;
+}
+
+%font-style-italic {
+  font-style:italic;
+}
+
+%font-style-and-space-inherit {
+  font-style:inherit;
+  white-space:inherit;
+}
+
+%preformatted {
+  white-space:pre;
+  white-space:pre-wrap;
+  word-break:break-all;
+  word-wrap:break-word;
+}
+
+%font-weight-bold {
+  font-weight:700;
+}
+
+%font-weight-normal {
+  font-weight:300;
+}
+
+%font-size-body {
+  font-size:13px;
+}
+
+%font-size-230perc {
+  font-size:230%;
+}
+
+%font-size-185perc {
+  font-size:185%;
+}
+
+%font-size-140perc {
+  font-size:140%;
+}
+
+%font-size-120perc {
+  font-size:120%;
+}
+
+%font-size-h4 {
+  font-size:106%;
+}
+
+%font-size-full {
+  font-size:100%;
+}
+
+%font-size-95perc {
+  font-size:95%;
+}
+
+%font-size-85perc {
+  font-size:85%;
+}
+
+%font-size-75perc {
+  font-size:75%;
+}
+
+%font-size-50perc {
+  font-size:60%;
+}
+
+%line-height-170perc {
+  line-height:170%;
+}
+
+%line-height-150perc {
+  line-height:150%;
+}
+
+%line-height-135perc {
+  line-height:135%;
+}
+
+%line-height-130perc {
+  line-height:130%;
+}
+
+%line-height-120perc {
+  line-height:120%;
+}
+
+%line-height-full {
+  line-height:100%;
+}
+
+%line-height-none {
+  line-height:0;
+}
+
+%text-transform-uppercase {
+  text-transform:uppercase;
+}
+
+%text-decoration-underline {
+  text-decoration:underline;
+}
+
+%text-decoration-line-through {
+  text-decoration:line-through;
+}
+
+%text-decoration-none {
+  text-decoration:none;
+}
+
+%vertical-align-form-element {
+  vertical-align:bottom;
+  *vertical-align:middle;
+}
+
+%vertical-align-top {
+  vertical-align:top;
+}
+
+%vertical-align-baseline {
+  vertical-align:baseline;
+}
+
+%border-init-1px {
+  @extend %border-init;
+  @extend %border-1px;
+}
+
+
+// Grid section
+// -----------------------------
+
+%component-site-section {
+  @extend %position-relative;
+  @extend %width-full;
+}
+
+// Grid block
+// -----------------------------
+%component-block {
+  @extend %component-clearfix;
+}
+
+%component-grid-block {
+  @extend %component-block;
+  @extend %float-left;
+  @extend %width-full;
+  @extend %min-height-1px;
+}
+
+// Component
+// -----------------------------
+
+%component-center {
+  @extend %float-none-important;
+  @extend %position-relative;
+  @extend %center;
+}
+
+%component-quote-before {
+  @extend %component-quote-before-and-after;
+}
+
+%component-quote-after {
+  @extend %component-quote-before-and-after;
+}
+
+%component-quote {
+  &:before {
+    @extend %component-quote-before;
+  }
+  & {
+    @extend %quotes-none;
+  }
+  &:after {
+    @extend %component-quote-after;
+  }
+}
+
+// Size
+// -----------------------------
+
+%component-width-fit {
+  & {
+    @extend %float-left;
+    @extend %width-width-fit;
+  }
+
+  & img {
+    @extend %component-block;
+  }
+}
+
+%component-width-fill {
+  @extend %display-width-fill;
+  @extend %width-width-fill;
+  @extend %min-width-50px;
+}
+
+// Form element
+// -----------------------------
+
+%component-form-element {
+  @extend %display-inline-block;
+  @extend %margin-none;
+  @extend %font-family-sans-serif;
+  @extend %font-size-full;
+  @extend %line-height-150perc;
+  @extend %vertical-align-form-element;
+}
+
+%component-form-button-element {
+  @extend %component-form-element;
+  @extend %padding-button;
+}
+
+%component-form-text-element {
+  @extend %component-form-element;
+  @extend %padding-4px;
+}
+
+// List
+// -----------------------------
+
+%component-list {
+  & {
+    @extend %margin-list;
+    @extend %overflow-visible;
+    @extend %padding-none;
+    @extend %border-init;
+  }
+
+  & ul {
+    @extend %margin-bottom-none;
+  }
+
+  & ol {
+    @extend %margin-bottom-none;
+  }
+}
+
+// Table
+// -----------------------------
+
+%component-table {
+  & {
+    @extend %margin-none;
+    @extend %margin-bottom-9px;
+    @extend %width-full;
+    @extend %border-table;
+    @extend %border-init;
+  }
+
+  & input {
+    @extend %width-table-input;
+    @extend %border-width-none;
+    @extend %padding-none;
+    @extend %overflow-hidden;
+    @extend %line-height-135perc;
+  }
+
+  &.border {
+    @extend %border-top-left-1px;
+
+    & th {
+      @extend %border-bottom-right-1px;
+    }
+
+    & td {
+      @extend %border-bottom-right-1px;
+    }
+  }
+}
+
+%component-table-cell {
+  & {
+    @extend %position-relative-ie6-ie7;
+    @extend %padding-8px;
+    @extend %border-init;
+    @extend %text-align-left;
+    @extend %line-height-full;
+    @extend %vertical-align-top;
+  }
+}
+
+// Clearfix
+// -----------------------------
+
+%component-clearfix-before {
+  @extend %component-clearfix-before-and-after;
+}
+
+%component-clearfix-after {
+  @extend %clear-both;
+  @extend %component-clearfix-before-and-after;
+}
+
+%component-clearfix {
+  &:before {
+    @extend %component-clearfix-before;
+  }
+  & {
+    @extend %component-clearfix-ie6-ie7;
+  }
+  &:after {
+    @extend %component-clearfix-after;
+  }
+}
+
+
+// HTML elements
+// -----------------------------
+
+* {
+  & html {
+    @extend %background-image-cache;
+  }
+  &:hover {
+    @extend %outline-none;
+  }
+  &:active {
+    @extend %outline-none;
+  }
+  &:focus {
+    @extend %outline-none;
+  }
+}
+
+a {
+  & {
+    @extend %border-init;
+    @extend %cursor-pointer;
+    @extend %text-decoration-none;
+  }
+  &:hover {
+    @extend %text-decoration-underline;
+  }
+}
+
+abbr {
+  @extend %border-init-1px;
+  @extend %border-style-dotted;
+  @extend %cursor-help;
+  @extend %font-size-95perc;
+  @extend %text-transform-uppercase;
+}
+
+address {
+  @extend %component-block;
+  @extend %margin-none;
+  @extend %margin-bottom-9px;
+  @extend %font-style-and-space-inherit;
+  @extend %line-height-150perc;
+}
+
+article {
+  @extend %component-grid-block;
+  @extend %border-init;
+}
+
+aside {
+  @extend %component-grid-block;
+  @extend %border-init;
+}
+
+audio {
+  @extend %display-inline-block;
+}
+
+b {
+  @extend %font-weight-bold;
+}
+
+blockquote {
+  @extend %margin-none;
+  @extend %margin-bottom-9px;
+  @extend %padding-none;
+  @extend %padding-left-15px;
+  @extend %border-init;
+  @extend %border-blockquote;
+  @extend %component-quote;
+
+  & p {
+    @extend %margin-none;
+    @extend %font-weight-normal;
+    @extend %font-size-120perc;
+  }
+}
+
+body {
+  @extend %position-relative;
+  @extend %margin-none;
+  @extend %height-full;
+  @extend %overflow-visible;
+  @extend %text-rendering-legibility;
+  @extend %text-size-adjust-full;
+  @extend %font-family-sans-serif;
+  @extend %font-size-body;
+  @extend %line-height-150perc;
+}
+
+button {
+  @extend %component-form-button-element;
+  @extend %margin-right-5px;
+  @extend %border-init-1px;
+  @extend %overflow-visible-ie6-ie7;
+
+  &::-moz-focus-inner {
+    @extend %button-focus-inner;
+  }
+}
+
+canvas {
+  @extend %display-inline-block;
+}
+
+cite {
+  @extend %font-style-and-space-inherit;
+  @extend %font-style-italic;
+}
+
+code {
+  @extend %padding-code;
+  @extend %border-init-1px;
+  @extend %font-family-serif;
+  @extend %font-size-95perc;
+}
+
+col {
+  @extend %border-init;
+}
+
+dd {
+  @extend %margin-none;
+  @extend %margin-left-9px;
+  @extend %line-height-150perc;
+}
+
+del {
+  @extend %text-decoration-line-through;
+}
+
+details {
+  @extend %component-block;
+}
+
+dfn {
+  @extend %font-style-italic;
+}
+
+div {
+  @extend %component-block;
+  @extend %border-init;
+}
+
+dl {
+  @extend %margin-none;
+  @extend %margin-bottom-9px;
+}
+
+dt {
+  @extend %font-weight-bold;
+  @extend %line-height-150perc;
+}
+
+em {
+  @extend %font-style-italic;
+}
+
+fieldset {
+  @extend %position-relative;
+  @extend %margin-padding-fieldset;
+  @extend %border-init;
+}
+
+figcaption {
+  @extend %component-block;
+  @extend %font-style-italic;
+}
+
+figure {
+  @extend %component-block;
+  @extend %margin-none;
+  @extend %width-full;
+  @extend %border-init;
+
+  & img {
+    @extend %margin-none;
+  }
+}
+
+footer {
+  @extend %component-grid-block;
+  @extend %border-init;
+}
+
+form {
+  @extend %margin-none;
+
+  & .cell {
+    @extend %margin-4px;
+  }
+}
+
+h1 {
+  @extend %margin-none;
+  @extend %text-rendering-legibility;
+  @extend %font-weight-bold;
+  @extend %font-size-230perc;
+  @extend %line-height-120perc;
+
+  & small {
+    @extend %font-size-60perc;
+  }
+}
+
+h2 {
+  @extend %margin-none;
+  @extend %text-rendering-legibility;
+  @extend %font-weight-bold;
+  @extend %font-size-185perc;
+  @extend %line-height-150perc;
+
+  & small {
+    @extend %font-size-75perc;
+  }
+}
+
+h3 {
+  @extend %margin-none;
+  @extend %text-rendering-legibility;
+  @extend %font-weight-bold;
+  @extend %font-size-140perc;
+  @extend %line-height-150perc;
+
+  & small {
+    @extend %font-size-75perc;
+  }
+}
+
+h4 {
+  @extend %margin-none;
+  @extend %text-rendering-legibility;
+  @extend %font-weight-bold;
+  @extend %font-size-h4;
+  @extend %line-height-130perc;
+
+  & small {
+    @extend %font-size-95perc;
+  }
+}
+
+h5 {
+  @extend %margin-none;
+  @extend %text-rendering-legibility;
+  @extend %font-weight-bold;
+  @extend %font-size-95perc;
+  @extend %line-height-150perc;
+}
+
+h6 {
+  @extend %margin-none;
+  @extend %text-rendering-legibility;
+  @extend %font-weight-bold;
+  @extend %text-transform-uppercase;
+  @extend %font-size-85perc;
+  @extend %line-height-170perc;
+}
+
+header {
+  @extend %component-grid-block;
+  @extend %border-init;
+}
+
+hgroup {
+  @extend %component-block;
+}
+
+hr {
+  @extend %margin-hr;
+  @extend %border-init;
+  @extend %border-bottom-1px;
+  @extend %border-top-1px;
+}
+
+html {
+  @extend %height-full;
+  @extend %overflow-html;
+}
+
+i {
+  @extend %font-style-italic;
+}
+
+img {
+  @extend %display-inline-block;
+  @extend %float-left;
+  @extend %margin-bottom-4px;
+  @extend %margin-right-4px;
+  @extend %border-init;
+  @extend %height-auto;
+  @extend %interpolation-cubic;
+}
+
+input {
+  @extend %component-form-text-element;
+  @extend %border-init-1px;
+  @extend %overflow-visible-ie6-ie7;
+
+  &::-moz-focus-inner {
+    @extend %input-focus-inner;
+  }
+}
+
+ins {
+  @extend %text-decoration-none;
+}
+
+kbd {
+  @extend %font-family-serif;
+  @extend %font-size-95perc;
+}
+
+label {
+  @extend %display-inline-block;
+  @extend %padding-5px;
+}
+
+legend {
+  @extend %position-relative;
+  @extend %margin-none;
+  @extend %margin-left-legend;
+  @extend %padding-none;
+  @extend %font-style-and-space-inherit;
+}
+
+li {
+  @extend %display-list-item;
+  @extend %border-init;
+  @extend %line-height-150perc;
+}
+
+nav {
+  @extend %component-grid-block;
+  @extend %border-init;
+}
+
+ol {
+  @extend %component-list;
+  @extend %list-style-decimal;
+}
+
+p {
+  @extend %margin-none;
+  @extend %margin-bottom-9px;
+  @extend %text-align-justify;
+  @extend %font-family-sans-serif;
+  @extend %font-size-full;
+  @extend %line-height-150perc;
+
+  & small {
+    @extend %font-size-85perc;
+  }
+}
+
+pre {
+  @extend %component-block;
+  @extend %margin-none;
+  @extend %margin-bottom-9px;
+  @extend %padding-pre;
+  @extend %border-init-1px;
+  @extend %font-family-serif;
+  @extend %preformatted;
+  @extend %font-size-95perc;
+  @extend %line-height-150perc;
+}
+
+q {
+  @extend %component-quote;
+}
+
+samp {
+  @extend %font-family-serif;
+  @extend %font-size-95perc;
+}
+
+section {
+  @extend %component-grid-block;
+  @extend %border-init;
+}
+
+select {
+  @extend %component-form-text-element;
+  @extend %padding-left-none;
+  @extend %width-select;
+  @extend %height-select;
+  @extend %border-init-1px;
+}
+
+small {
+  @extend %font-weight-normal;
+  @extend %line-height-full;
+  @extend %font-size-full;
+}
+
+span {
+  @extend %border-init;
+}
+
+strong {
+  @extend %font-weight-bold;
+}
+
+sub {
+  @extend %position-relative;
+  @extend %bottom-sub;
+  @extend %line-height-none;
+  @extend %font-size-85perc;
+  @extend %vertical-align-baseline;
+}
+
+sup {
+  @extend %position-relative;
+  @extend %top-sup;
+  @extend %line-height-none;
+  @extend %font-size-85perc;
+  @extend %vertical-align-baseline;
+}
+
+table {
+  @extend %component-table;
+  @extend %border-init;
+  @extend %font-size-95perc;
+  @extend %line-height-135perc;
+}
+
+td {
+  @extend %component-table-cell;
+}
+
+textarea {
+  @extend %component-form-text-element;
+  @extend %border-init;
+  @extend %overflow-textarea;
+  @extend %vertical-align-top;
+}
+
+th {
+  @extend %component-table-cell;
+  @extend %font-weight-bold;
+}
+
+ul {
+  @extend %component-list;
+  @extend %list-style-disc;
+}
+
+video {
+  @extend %display-inline-block;
+}
+
+.border {
+  @extend %border-1px;
+}
+
+.cell {
+  @extend %margin-10px;
+}
+
+.col {
+  @extend %component-grid-block;
+}
+
+.mediaobject {
+  & .cell {
+    @extend %margin-4px;
+  }
+}
+
+.site-center {
+  @extend %component-center;
+  @extend %width-920px;
+  @extend %min-width-200px;
+}
+
+.site-footer {
+  @extend %component-site-section;
+}
+
+.site-header {
+  @extend %component-site-section;
+}
+
+.width-fit {
+  @extend %component-width-fit;
+}
+
+.width-fill {
+  @extend %component-width-fill;
+}
+
+[hidden] {
+  @extend %display-none-modern-only;
+}
+
+audio:not([controls]) {
+  @extend %display-none-modern-only-2;
+}
+
+code {
+    border-color:#e1e1e8;
+}
+
+fieldset {
+    border-color:#c0c0c0;
+}
+
+table,th,td {
+    border-color:#333;
+}
+
+hr {
+    border-bottom-color:#fff;
+}
+
+.site-header,th {
+    background:#2d3538;
+}
+
+ins {
+    background:#ff9;
+}
+
+mark {
+    background:#ff0;
+}
+
+body,.site-footer,pre,button,code {
+    background-color:#f7f7f9;
+}
+
+table,.site-body {
+    background-color:#fff;
+}
+
+.masthead {
+    background:#3981a7;
+}
+
+h6,small {
+    color:#999;
+}
+
+input,textarea {
+    color:#808080;
+}
+
+code {
+    color:#d14;
+}
+
+body,select,input,textarea,button {
+    color:#333;
+}
+
+a {
+    color: #4090ba;
+}
+
+a:hover {
+    color:#337394;
+}
+
+.masthead,.site-header,th {
+    color:#fff;
+}
+
+@media (min-width:1200px) {
+    .site-center {
+        width:1160px;
+    }
+    .cell{
+        margin:15px;
+    }
+}
+
+@media (min-width:768px) and (max-width:979px) {
+    .site-center {
+        width:704px;
+    }
+}
+
+@media (max-width:767px) {
+
+    .col {
+        display:block;
+        float:left;
+        width:100%;
+    }
+
+    .site-center,.site-body,.site-header,.site-footer {
+        margin:0 !important;
+        width:100%;
+        border:none !important;
+    }
+}
+
+
+
+
+
+
+
+
