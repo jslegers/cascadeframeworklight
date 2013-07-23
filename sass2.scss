@@ -1,0 +1,235 @@
+@function findInList($list, $value) {
+  @each $item in $list {
+    @if $item == $value {
+      @return true;
+    }
+  }
+  @return false;
+}
+
+@function removeDuplicatesFromList($list) {
+  $processed : ();
+  @each $item in $list {
+    @if false == findInList($processed, $item) {
+      $processed : append($processed, $item);
+    }
+  }
+  @return $processed;
+}
+
+@function appendToListIems($list, $value) {
+  $processed : ();
+  @each $item in $list {
+    $processed : append($processed, $item+$value);
+  }
+  @return $processed;
+}
+
+@function stringFromList($list, $separator) {
+  $first : true;
+  $string : '';
+  @each $item in $list {
+    @if $first {
+      $string : $string + $item;
+      $first : false;
+    } @else {
+      $string : $string + $separator + $item;
+    }
+  }
+  @return $string;
+}
+
+@mixin generateList($placeholder, $values: 0) {
+  @include generatePrefixedList('', $placeholder, $values);
+}
+
+@mixin generatePrefixedList($prefix, $placeholder, $values: 0, $unit : px) {
+  @if $prefix != '' {
+    $prefix : $prefix + '-';
+  }
+  $values : removeDuplicatesFromList($values);
+  @each $value in $values {
+    $value : appendToListIems($value, $unit);
+    %#{$prefix}#{$placeholder}-#{stringFromList($value, '-')} {
+      @if $value == 0 {
+        #{$placeholder}: 0;
+      } @else {
+        #{$placeholder}: #{stringFromList($value, ' ')};
+      }
+    }
+  }
+}
+
+@mixin generateRange($placeholder, $min : 0, $max : 100, $unit : px) {
+  @include generatePrefixedRange('', $placeholder, $min, $max, $unit);
+}
+
+@mixin generatePrefixedRange($prefix, $placeholder, $min : 0, $max : 100, $unit : px) {
+  @for $i from $min through $max {
+    @include generatePrefixedList($prefix, $placeholder, $i, $unit);
+  }
+}
+
+@mixin extend($placeholder) {
+  @extend %#{$placeholder};
+}
+
+@mixin rule($placeholder, $value, $unit : px) {
+  @include extend($placeholder+'-'+stringFromList(appendToListIems($value, $unit), '-'));
+}
+
+@mixin ruleList($rule) {
+  @include rule($rule...);
+}
+
+@mixin rules($rules...) {
+  @each $value in $rules {
+    @include ruleList($value);
+  }
+}
+
+@mixin rulesList($rule) {
+  @include rules($rule...);
+}
+
+@mixin prefixedRule($prefix, $placeholder, $value, $unit : px) {
+  @if $prefix != '' {
+    $prefix : $prefix + '-';
+  }
+  @include rule($prefix+$placeholder,$value,$unit);
+}
+
+
+
+
+
+// Define margins
+$margin-table-cell : (2,4);
+$margin-paragraph : 9;
+@include generateList(margin, (
+  $margin-table-cell,
+  $margin-paragraph
+));
+
+$margin-specialt : 9;
+@include generatePrefixedList(specialt,margin, (
+  $margin-specialt
+));
+
+// Define widths
+$border-table : 0;
+$border-table-cell : 0;
+$border-table-with-border : 1;
+$border-table-cell-with-border : 1;
+$border-table-with-thick-border : 2;
+$border-table-cell-with-thick-border : 3;
+@include generateList(border-width, (
+  $border-table,
+  $border-table-with-border,
+  $border-table-with-thick-border,
+  $border-table-cell,
+  $border-table-cell-with-border,
+  $border-table-cell-with-thick-border
+));
+
+// Define margins you do not want to merge with the other margin rules
+$margin-specialbox : 9;
+@include generatePrefixedList(specialbox,margin, (
+  $margin-specialbox
+));
+
+// Generate configurable range of padding placeholders
+@include generateRange(padding);
+
+// Assign rules to divs
+div {
+  &.box {
+    @include rules(
+          (margin,$margin-table-cell),
+          (padding,8)
+    );
+  }
+  &.box2 {
+    @include rules(
+          (margin,$margin-paragraph),
+          (padding,4)
+    );
+  }
+  &.special {
+    @include rule(padding,9);
+    @include prefixedRule(specialbox,margin,$margin-specialbox);
+  }
+}
+
+// Assign rules to paragraphs
+p {
+  @include rules(
+        (margin,$margin-paragraph),
+        (padding,9)
+  );
+}
+
+// Assign rules to table
+table {
+  @include rules(
+        (border-width,$border-table)
+  );
+  &.special {
+    @include rule(padding,4);
+    @include prefixedRule(specialt,margin,$margin-specialt);
+  }
+  &.border {
+    & {
+      @include rules(
+            (border-width,$border-table-with-border)
+      );
+    }
+    & td {
+      @include rules(
+            (border-width,$border-table-cell-with-border),
+            (padding,7)
+      );
+    }
+    & th {
+      @include rules(
+            (border-width,$border-table-cell-with-border),
+            (padding,7)
+      );
+    }
+  }
+  &.thickBorder {
+    & {
+      @include rules(
+            (border-width,$border-table-with-thick-border)
+      );
+    }
+    & td {
+      @include rules(
+            (border-width,$border-table-cell-with-thick-border),
+            (padding,5)
+      );
+    }
+    & th {
+      @include rules(
+            (border-width,$border-table-cell-with-thick-border),
+            (padding,5)
+      );
+    }
+  }
+}
+
+// Assign rules to table cells
+td {
+  @include rules(
+        (margin, $margin-table-cell),
+        (padding, 8),
+        (border-width, $border-table-cell)
+  );
+}
+th {
+  @include rules(
+        (margin, $margin-table-cell),
+        (padding, 8),
+        (border-width, $border-table-cell)
+  );
+}
