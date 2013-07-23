@@ -11,11 +11,11 @@ div:after,div:before {
     content:""; display:table;
 }
 
-section,article,header,footer,aside,nav,img,.col,.sizefit,button {
+section,article,header,footer,aside,nav,img,.col,.width-fit,button {
     float:left;
 }
 
-.sizefill {
+.width-fill {
     display:table-cell;
     float:none;
     _float:left;
@@ -42,7 +42,7 @@ body {
     margin-right:auto !important;
 }
 
-.sizefill {
+.width-fill {
     min-width:50px;
 }
 
@@ -50,7 +50,7 @@ body {
     width:100%;
 }
 
-.sizefit {
+.width-fit {
     width:auto;
     _width:1px;
 }
@@ -60,6 +60,6 @@ body {
     min-width:200px;
 }
 
-.sizefill {
+.width-fill {
     width:10000px;*width:auto;
 }
