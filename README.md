@@ -1,3 +1,5 @@
+[![endorse](https://api.coderwall.com/johnslegers/endorsecount.png)](https://coderwall.com/johnslegers)
+
 # Cascade Framework Light
 
 Cascade Framework gives you a perfect balance between lots of features and a lightweigt footprint.
@@ -34,6 +36,3 @@ Cascade Framework is MIT licensed.
  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  OTHER DEALINGS IN THE SOFTWARE.
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jslegers/cascadeframeworklight/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
