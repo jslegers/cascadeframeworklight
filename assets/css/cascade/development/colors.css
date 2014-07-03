@@ -10,6 +10,10 @@ table,th,td {
     border-color:#333;
 }
 
+tbody tr:nth-child(odd) {
+    background: #eee;
+}
+
 hr {
     border-bottom-color:#fff;
 }
