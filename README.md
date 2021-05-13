@@ -1,5 +1,3 @@
-[![endorse](https://api.coderwall.com/johnslegers/endorsecount.png)](https://coderwall.com/johnslegers)
-
 # Cascade Framework Light
 
 Cascade Framework gives you a perfect balance between lots of features and a lightweigt footprint.
@@ -8,9 +6,9 @@ Cascade Framework Light is a framework for when you don't need most of the featu
 
 If you want just a normalised boilerplate to start from any don't need most of the features offered by Cascade Framework, Cascade Framework Light is the way to go.
 
-![Cascade Framework](http://jslegers.github.com/cascadeframeworklight/screenshot.png)
+![Cascade Framework](http://jslegers.github.io/cascadeframeworklight/screenshot.png)
 
-For a live demo, go to [http://jslegers.github.com/cascadeframeworklight/](http://jslegers.github.com/cascadeframeworklight/).
+For a live demo, go to [http://jslegers.github.io/cascadeframeworklight/](http://jslegers.github.io/cascadeframeworklight/).
 
 Cascade Framework is MIT licensed.
 
